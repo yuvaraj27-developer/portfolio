@@ -1,15 +1,15 @@
 import React from 'react';
+import Navbar from './Navbar/index.tsx';
+import Section from './Section/index.tsx';
+import Footer from './Footer/index.tsx';
 
-type LayoutProps = {
-  children: React.ReactNode;
-}
 
-const Layout:React.FC<LayoutProps> = ({ children }) => {
+const Layout:React.FC = () => {
   return(
-    <div>
-      {children}
-      <p className='text-3xl font-bold underline'>I'm the App component</p>
-      <p className='bg-primary flex'>I'm the App component</p>
+    <div className='flex w-screen h-screen bg-dark text-light font-5 flex-col'>
+      <Navbar />
+      <Section />
+      <Footer />
     </div>
   );
 }
