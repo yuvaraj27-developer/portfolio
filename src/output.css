@@ -558,20 +558,41 @@ video {
   display: flex;
 }
 
-.bg-primary {
+.h-screen {
+  height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.bg-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1));
+  background-color: rgb(7 6 33 / var(--tw-bg-opacity, 1));
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.font-5 {
+  font-weight: 500;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 244 / var(--tw-text-opacity, 1));
 }
 
-.underline {
-  text-decoration-line: underline;
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(7 6 33 / var(--tw-text-opacity, 1));
 }

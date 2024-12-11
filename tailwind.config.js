@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#6366f1',
+        primary: '#abace93b',
         secondary: '#e0e7ff',
-        dark: '#1e1b4b',
+        dark: '#070621',
+        light: '#f4f4f4',
       },
       spacing: {
         1: '1px',
@@ -16,6 +17,22 @@ module.exports = {
         5: '16px',
         6: '32px',
       },
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'],
+      },
+      fontWeight: {
+        1: 100,
+        2: 200,
+        3: 300,
+        4: 400,
+        5: 500,
+        6: 600,
+        7: 700,
+      },
+      textColor: {
+        dark: '#070621',
+        light: '#f4f4f4',
+      }
     },
   },
   plugins: [],
