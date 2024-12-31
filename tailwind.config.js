@@ -19,6 +19,9 @@ module.exports = {
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
+        'marker': ['Permanent Marker', 'sans-serif'],
+        'rubik': ['Rubik Dirt', 'sans-serif'],
+        'sacramento': ['Sacramento', 'cursive'],
       },
       fontWeight: {
         1: 100,

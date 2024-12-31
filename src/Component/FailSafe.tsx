@@ -22,7 +22,7 @@ class FailSafe extends React.Component<FailSafeProps, FailSafeState> {
 
   render() {
     if (this.state.hasError) {
-      return <p>error component</p>;
+      return <p>error component - Yet to be built</p>;
     }
     return this.props.children;
   }
