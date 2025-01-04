@@ -54,21 +54,21 @@ const IntroScreen:React.FC<props> = ({ openPortfolio }) => {
       }
       letter.classList.add('-translate-y-4');
     } else {
-      letter.classList.add('opacity-0', 'text-red-500', 'ease-in-out', 'duration-1000');
+      letter.classList.add('opacity-0', 'text-dark', 'ease-in-out', 'duration-1000');
     }
   }
 
   return (
     <div className='flex flex-1 justify-center items-center flex-col overflow-hidden'>
-      <div className='mb-4'>
-        <p ref={findMyNameRef} className='text-xl font-rubik opacity-0 duration-[4000ms] ease-out tracking-widest'>
+      <div className='mb-6'>
+        <p ref={findMyNameRef} className='text-xl md:text-3xl font-rubik opacity-0 duration-[4000ms] ease-out tracking-widest'>
           Uncover my nick name
         </p>
       </div>
       <div>
         <p 
           ref={myNameRef}
-          className='text-2xl md:text-9xl font-rubik flex opacity-0 transition-all duration-[4000ms] ease-out'
+          className='text-3xl md:text-9xl font-rubik flex opacity-0 transition-all duration-[4000ms] ease-out'
         >
           {['Y', 'U', 'V', 'A', 'R', 'A', 'J'].map((letter, index) => (
             <span
@@ -76,7 +76,9 @@ const IntroScreen:React.FC<props> = ({ openPortfolio }) => {
               role='button'
               ref={refs[letter] || null}
               onClick={onClickLetter}
+              onKeyDown={(event) => event.key === 'Enter' && onClickLetter(event)}
               className='px-5'
+              tabIndex={index+1}
             >
               {letter}
             </span>

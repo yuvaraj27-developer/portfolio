@@ -9,6 +9,9 @@ module.exports = {
         dark: '#070621',
         light: '#f4f4f4',
       },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to top right, #070621 10%, #abace93b 25%, #070621 50%, #abace93b 85%, #070621 100%)',
+      },
       spacing: {
         1: '1px',
         2: '2px',
@@ -16,6 +19,7 @@ module.exports = {
         4: '8px',
         5: '16px',
         6: '32px',
+        7: '64px',
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
@@ -57,6 +61,19 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.button-hover': {
+          padding: '4px' 
+        },
+        '.button-hover:hover': {
+          backgroundColor: 'rgba(249,250,251,0.22)',
+          borderRadius: '4px',
+          cursor: 'pointer',
+        },
+      });
+    },
+  ],
 }
 
