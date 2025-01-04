@@ -35,7 +35,26 @@ module.exports = {
       textColor: {
         dark: '#070621',
         light: '#f4f4f4',
-      }
+      },
+      keyframes: {
+        zoomOutScreen: {
+          '0%': { transform: 'scale(1) translateZ(0)' },
+          '100%': { transform: 'scale(100) translateZ(10px)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '1', backgroundColor: '#070621' },
+          '100%': { opacity: '0', backgroundColor: 'white'},
+        },
+        fadeOut: {
+          '0%': { opacity: '0', backgroundColor: 'white' },
+          '100%': { opacity: '1', backgroundColor: '#070621'},
+        },
+      },
+      animation: {
+        zoomOutScreen: 'zoomOutScreen 3s ease-in-out forwards',
+        fadeInScreen: 'fadeIn 1s ease-in forwards',
+        fadeOutScreen: 'fadeOut 1s ease-out forwards',
+      },
     },
   },
   plugins: [],
