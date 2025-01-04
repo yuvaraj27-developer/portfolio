@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.mb-4 {
+  margin-bottom: 8px;
+}
+
 .flex {
   display: flex;
 }
@@ -570,14 +574,55 @@ video {
   flex: 1 1 0%;
 }
 
-.translate-y-4 {
-  --tw-translate-y: 8px;
+.-translate-y-4 {
+  --tw-translate-y: -8px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-5 {
-  --tw-translate-y: 16px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+    background-color: #070621;
+  }
+
+  100% {
+    opacity: 0;
+    background-color: white;
+  }
+}
+
+.animate-fadeInScreen {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    background-color: white;
+  }
+
+  100% {
+    opacity: 1;
+    background-color: #070621;
+  }
+}
+
+.animate-fadeOutScreen {
+  animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes zoomOutScreen {
+  0% {
+    transform: scale(1) translateZ(0);
+  }
+
+  100% {
+    transform: scale(100) translateZ(10px);
+  }
+}
+
+.animate-zoomOutScreen {
+  animation: zoomOutScreen 3s ease-in-out forwards;
 }
 
 .flex-col {
@@ -592,9 +637,18 @@ video {
   justify-content: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(7 6 33 / var(--tw-bg-opacity, 1));
+}
+
+.px-5 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .font-rubik {
@@ -606,12 +660,21 @@ video {
   line-height: 2rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-5 {
   font-weight: 500;
 }
 
-.tracking-\[20px\] {
-  letter-spacing: 20px;
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-light {
@@ -634,8 +697,16 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .duration-\[4000ms\] {
   transition-duration: 4000ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ease-out {
@@ -646,9 +717,5 @@ video {
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
-  }
-
-  .md\:tracking-\[40px\] {
-    letter-spacing: 40px;
   }
 }
