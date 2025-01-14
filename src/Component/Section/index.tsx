@@ -1,10 +1,10 @@
 import React from 'react';
-import ProfileImage from '../../SVG/ProfileImage.tsx';
+import ProfileComponent from './ProfileComponent.tsx';
 
 const Section:React.FC = () => {
   return(
     <main className='overflow-y-auto'>
-      <ProfileImage />
+      <ProfileComponent />
     </main>
   );
 }
