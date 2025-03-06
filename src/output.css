@@ -592,50 +592,8 @@ video {
   z-index: 10;
 }
 
-.m-2 {
-  margin: 2px;
-}
-
-.my-2 {
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-
-.my-5 {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
 .mb-6 {
   margin-bottom: 32px;
-}
-
-.mt-4 {
-  margin-top: 8px;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-6 {
-  margin-top: 32px;
-}
-
-.mt-5 {
-  margin-top: 16px;
-}
-
-.mt-4 {
-  margin-top: 8px;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-6 {
-  margin-top: 32px;
 }
 
 .mt-5 {
@@ -763,10 +721,6 @@ video {
   background-image: linear-gradient(to top right, #070621 10%, #abace93b 25%, #070621 50%, #abace93b 85%, #070621 100%);
 }
 
-.p-2 {
-  padding: 2px;
-}
-
 .px-2 {
   padding-left: 2px;
   padding-right: 2px;
@@ -777,16 +731,16 @@ video {
   padding-right: 16px;
 }
 
-.font-rubik {
-  font-family: Rubik Dirt, sans-serif;
+.font-inter {
+  font-family: Inter, sans-serif;
 }
 
 .font-playwrite {
   font-family: Playwrite AU SA, sans-serif;
 }
 
-.font-inter {
-  font-family: Inter, sans-serif;
+.font-rubik {
+  font-family: Rubik Dirt, sans-serif;
 }
 
 .text-3xl {
@@ -799,57 +753,14 @@ video {
   line-height: 1;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-\[2px\] {
-  font-size: 2px;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
-}
-
-.text-\[8px\] {
-  font-size: 8px;
-}
-
-.text-\[9px\] {
-  font-size: 9px;
-}
-
-.text-\[18px\] {
-  font-size: 18px;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-5 {
@@ -858,22 +769,6 @@ video {
 
 .font-7 {
   font-weight: 700;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-9 {
-  line-height: 2.25rem;
 }
 
 .leading-8 {
@@ -896,10 +791,6 @@ video {
 .text-light {
   --tw-text-opacity: 1;
   color: rgb(244 244 244 / var(--tw-text-opacity, 1));
-}
-
-.text-\[px\] {
-  color: px;
 }
 
 .opacity-0 {
