@@ -4,7 +4,7 @@ import PortFolioScreen from './PortFolioScreen.tsx';
 
 const Layout:React.FC = () => {
   const screenRef = useRef<HTMLDivElement>(null);
-  const [introScreen, setIntroScreen] = useState<boolean>(true);
+  const [introScreen, setIntroScreen] = useState<boolean>(false);
 
   const openPortfolio = () => {
     flashScreen();
@@ -14,7 +14,7 @@ const Layout:React.FC = () => {
   };
 
   const flashScreen = () => {
-    const screenElement = screenRef.current;
+    const screenElement = screenRef.current;  
     screenElement?.classList.add('animate-fadeInScreen');
     setTimeout(() => {
       screenElement?.classList.add('animate-fadeOutScreen');

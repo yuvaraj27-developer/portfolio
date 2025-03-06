@@ -592,6 +592,11 @@ video {
   z-index: 10;
 }
 
+.my-6 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
 .mb-6 {
   margin-bottom: 32px;
 }
@@ -616,8 +621,12 @@ video {
   width: 100%;
 }
 
-.max-w-\[50\%\] {
-  max-width: 50%;
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.max-w-\[90\%\] {
+  max-width: 90%;
 }
 
 .flex-1 {
@@ -707,6 +716,10 @@ video {
   overflow-y: auto;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border-neutral-50 {
   --tw-border-opacity: 1;
   border-color: rgb(250 250 250 / var(--tw-border-opacity, 1));
@@ -715,6 +728,20 @@ video {
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(7 6 33 / var(--tw-bg-opacity, 1));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#070621\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 6 33 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#07062178\] {
+  background-color: #07062178;
 }
 
 .bg-custom-gradient {
@@ -729,6 +756,10 @@ video {
 .px-5 {
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-inter {
@@ -746,11 +777,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-lg {
@@ -842,7 +868,51 @@ video {
   border: 1px solid rgb(252, 252, 252);
 }
 
+html {
+  font-size: 16px;
+  @media (min-width: 400px) and (max-width: 600px) {
+    font-size: 18px;
+  }
+  @media (min-width: 600px) {
+    font-size: 20px;
+  }
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  @media (min-width: 400px) and (max-width: 600px) {
+    width: 180px;
+
+    height: 180px;
+  }
+  @media (min-width: 600px) {
+    width: 267px;
+
+    height: 260px;
+  }
+  @keyframe 
+
+}
+
 @media (min-width: 768px) {
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .md\:max-w-\[50\%\] {
+    max-width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
